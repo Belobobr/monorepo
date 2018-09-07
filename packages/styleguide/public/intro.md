@@ -1,4 +1,7 @@
 # Project Components
 ```react
-<div>Hello Catalog</div>
+<Another />
+```
+```react
+<Hello />
 ```
