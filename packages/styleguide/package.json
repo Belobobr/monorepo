@@ -1,9 +1,9 @@
 {
   "name": "styleguide",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "dependencies": {
-    "@tripeverywheree/commonutils": "^0.0.1",
+    "@tripeverywheree/commonutils": "^0.0.2",
     "@tripeverywheree/uikit": "^0.0.1",
     "catalog": "^3.5.5",
     "react": "^16.4.2",

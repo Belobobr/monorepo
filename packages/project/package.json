@@ -1,9 +1,9 @@
 {
   "name": "project",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "dependencies": {
-    "@tripeverywheree/commonutils": "^0.0.1",
+    "@tripeverywheree/commonutils": "^0.0.2",
     "@tripeverywheree/uikit": "^0.0.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
