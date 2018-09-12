@@ -1,7 +1,11 @@
 'use strict';
 
-module.exports = index;
+module.exports = {
+    firstFunction: function() {
 
-function index() {
-    // TODO
-}
+    },
+    secondFunction: function() {
+
+    }
+};
+
