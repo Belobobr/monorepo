@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import Another from 'uikit/lib/Another';
-import Hello from 'uikit/lib/Hello';
+import Another from '@tripeverywheree/uikit/lib/Another';
+import Hello from '@tripeverywheree/uikit/lib/Hello';
 import './App.css';
 
 class App extends Component {
