@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@tripeverywheree/commonutils": "^0.0.1",
+    "@tripeverywheree/uikit": "^0.0.1",
     "catalog": "^3.5.5",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-scripts": "1.1.5",
-    "uikit": "^1.0.0"
+    "react-scripts": "1.1.5"
   },
   "scripts": {
     "start": "react-scripts start",

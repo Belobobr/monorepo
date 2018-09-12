@@ -1,0 +1,29 @@
+{
+  "name": "@tripeverywheree/commonutils",
+  "version": "0.0.1",
+  "description": "Common utils used in company",
+  "keywords": [
+    "common"
+  ],
+  "author": "Mikhail Sednev <sednevmixail@gmail.com>",
+  "homepage": "https://github.com/Belobobr/monorepo#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Belobobr/monorepo.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/Belobobr/monorepo/issues"
+  }
+}
