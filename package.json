@@ -6,6 +6,10 @@
   },
   "scripts": {
     "publish": "lerna publish",
-    "bootstrap": "lerna bootstrap"
+    "bootstrap_hoist": "lerna bootstrap --hoist",
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean",
+    "storybook": "lerna run storybook",
+    "project": "lerna run start --scope=project"
   }
 }

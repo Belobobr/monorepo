@@ -1,7 +1,13 @@
 # monorepo
 
-**publishing** npm run publish --access public (run lerna publish)
+**publishing** `npm run publish --access public` (run lerna publish)
 
-**bootstrap** npm run bootstrap --hoist
+**bootstrap** `npm run bootstrap --hoist`
 
-**remove node_modules** - lerna clean
+**remove node_modules** `npm run clean`
+
+How to setup storybook? Use it or other?
+
+`bootstrap --hoist` does't work with current instalation of storybook (in separate folder from components and linked them as npm module)
+
+`bootstrap` work fine with current storybook instalation
