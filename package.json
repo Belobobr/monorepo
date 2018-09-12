@@ -11,6 +11,7 @@
     "clean": "lerna clean",
     "start_storybook": "lerna run storybook",
     "start_project": "lerna run start --scope=project",
-    "build_uikit": "lerna run build --scope=@tripeverywheree/uikit"
+    "build_uikit": "lerna run build --scope=@tripeverywheree/uikit",
+    "build_storybook": "lerna run build --scope=storybook"
   }
 }

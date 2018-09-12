@@ -5,3 +5,5 @@
 
 # nodemodules
 node_modules/
+
+packages/storybook/build/
