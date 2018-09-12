@@ -9,7 +9,8 @@
     "bootstrap_hoist": "lerna bootstrap --hoist",
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean",
-    "storybook": "lerna run storybook",
-    "project": "lerna run start --scope=project"
+    "start_storybook": "lerna run storybook",
+    "start_project": "lerna run start --scope=project",
+    "build_uikit": "lerna run build --scope=@tripeverywheree/uikit"
   }
 }
