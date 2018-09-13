@@ -45,3 +45,17 @@ how to use best of booth commonJs and es modules?
 https://github.com/rollup/rollup/wiki/pkg.module
 
 **eslint rules should be described at top level?**
+
+**flow**
+
+now i am using .flow shadow files
+
+how to export flow types from modules?
+
+https://github.com/facebook/flow/issues/1996
+
+proposal
+https://github.com/facebook/flow/pull/6504#issuecomment-399494738
+
+
+https://javascriptplayground.com/npm-flowjs-javascript/

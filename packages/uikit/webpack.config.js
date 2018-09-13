@@ -22,12 +22,8 @@ const production = {
                     loader: "babel-loader",
                     options: {
                         presets: [
-                            ["env", {
-                                "targets": {
-                                    "browsers": ["> 1%", "last 2 versions"]
-                                }
-                            }],
-                            "react"
+                            "@babel/preset-react",
+                            "@babel/preset-flow"
                         ]
                     }
                 }

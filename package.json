@@ -3,7 +3,8 @@
   "private": true,
   "devDependencies": {
     "lerna": "^3.3.1",
-    "husky": "^0.14.3"
+    "husky": "^0.14.3",
+    "flow-bin": "^0.80.0"
   },
   "scripts": {
     "publish": "lerna publish",
@@ -14,9 +15,10 @@
     "start_project": "lerna run start --scope=project",
     "build_uikit": "lerna run build --scope=@tripeverywheree/uikit",
     "build_storybook": "lerna run build --scope=storybook",
-    "watch_uikit": "lerna run watch --scope=@tripeverywheree/uikit",
     "build_project": "lerna run build --scope=project",
-    "precommit": "lerna run --concurrency 1 --stream precommit"
+    "watch_uikit": "lerna run watch --scope=@tripeverywheree/uikit",
+    "precommit": "lerna run --concurrency 1 --stream precommit",
+    "flow": "flow"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
