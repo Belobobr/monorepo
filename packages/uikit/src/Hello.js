@@ -4,4 +4,4 @@ function Hello() {
         <div>Hello World</div>
     );
 }
-module.exports = Hello;
+export default Hello;

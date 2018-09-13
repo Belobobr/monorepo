@@ -15,3 +15,6 @@ How to setup storybook? Use it or other?
 https://github.com/lerna/lerna/issues/1367
 
 lerna internaly use https://docs.npmjs.com/cli/link for linking npm packages
+
+
+for uikit we can use some boilerplate like - https://github.com/insin/nwb#react-components-and-libraries

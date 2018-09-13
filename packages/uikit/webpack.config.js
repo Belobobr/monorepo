@@ -1,31 +1,57 @@
 const path = require('path');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
-module.exports = {
+//const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+
+const production = {
+    name: "production",
+    mode: "production",
     entry: {
-        Another: './src/Another.jsx',
-        Hello: './src/Hello.jsx',
-        Button: './src/Button.jsx',
+        index: './src/index.js',
     },
     output: {
         path: path.resolve(__dirname, 'lib'),
         filename: '[name].js',
-        libraryTarget: 'commonjs2',
+        library: '@tripeverywheree/uikit',
+        libraryTarget: 'umd'
     },
     module: {
         rules: [
             {
-                test: /\.jsx?$/,
+                test: [/\.js$/, /\.jsx?$/],
                 exclude: /node_modules/,
                 use: {
-                    loader: 'babel-loader',
-                },
+                    loader: "babel-loader",
+                    options: {
+                        presets: [
+                            "env",
+                            "react"
+                        ]
+                    }
+                }
             },
         ],
     },
-    plugins: [
-        new UglifyJsPlugin(),
-    ],
-    externals: [
-        'react',
-    ],
-};
+    resolve: {
+        extensions: [
+            '.js',
+            '.jsx'
+        ]
+    },
+    externals: {
+        react: {
+            commonjs: 'react',
+            commonjs2: 'react',
+            amd: 'react',
+            root: 'react'
+        }
+    },
+    devtool: "source-map",
+}
+
+const development = {
+    ...production,
+    name: "development",
+    mode: "development",
+    devtool: "source-map",
+}
+
+module.exports = [production, development];
