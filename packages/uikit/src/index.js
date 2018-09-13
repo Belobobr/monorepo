@@ -3,7 +3,7 @@ import Button from './Button';
 import Hello from './Hello';
 
 export default {
-    Another,
-    Button,
-    Hello
-}
+  Another,
+  Button,
+  Hello
+};
