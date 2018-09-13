@@ -2,7 +2,8 @@
 import React from 'react';
 
 type ButtonProps = {|
-  title: string
+  title: string,
+  something?: boolean
 |};
 
 function Button(props: ButtonProps) {
