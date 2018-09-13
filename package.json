@@ -13,6 +13,7 @@
     "start_project": "lerna run start --scope=project",
     "build_uikit": "lerna run build --scope=@tripeverywheree/uikit",
     "build_storybook": "lerna run build --scope=storybook",
-    "watch_uikit": "lerna run watch --scope=@tripeverywheree/uikit"
+    "watch_uikit": "lerna run watch --scope=@tripeverywheree/uikit",
+    "build_project": "lerna run build --scope=project"
   }
 }

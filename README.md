@@ -43,3 +43,5 @@ https://medium.com/webpack/webpack-and-rollup-the-same-but-different-a41ad427058
 how to use best of booth commonJs and es modules?
 
 https://github.com/rollup/rollup/wiki/pkg.module
+
+**eslint rules should be described at top level?**
