@@ -1,9 +1,9 @@
 // @flow
 
-import Another from './Another';
-import Button from './Button';
-import Hello from './Hello';
-import Avatar from './Avatar';
+import Another from './components/Another';
+import Button from './components/Button';
+import Hello from './components/Hello';
+import Avatar from './components/Avatar';
 
 export default {
   Another,
