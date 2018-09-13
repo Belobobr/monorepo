@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import Another from '@tripeverywheree/uikit/lib/Another';
-import Hello from '@tripeverywheree/uikit/lib/Hello';
+import  UiKit from '@tripeverywheree/uikit/lib';
 import './App.css';
 
 class App extends Component {
@@ -15,7 +14,7 @@ class App extends Component {
         <p className="App-intro">
         To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <Another />
+        <UiKit.Another />
       </div>
     );
   }

@@ -22,7 +22,11 @@ const production = {
                     loader: "babel-loader",
                     options: {
                         presets: [
-                            "env",
+                            ["env", {
+                                "targets": {
+                                    "browsers": ["> 1%", "last 2 versions"]
+                                }
+                            }],
                             "react"
                         ]
                     }
@@ -51,7 +55,10 @@ const development = {
     ...production,
     name: "development",
     mode: "development",
-    devtool: "source-map",
+    devtool: "eval-source-map",
 }
+
+// TODO what "browsers": ["> 1%", "last 2 versions"] meens?
+//cheap-module-eval-source-map, eval-source-map
 
 module.exports = [production, development];
