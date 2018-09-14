@@ -1,8 +1,12 @@
+// @flow
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import UiKit from '@tripeverywheree/uikit/lib';
+import Core from '@project/core';
+
+ReactDOM.render(<Core.App />, document.getElementById('root'));
 registerServiceWorker();
