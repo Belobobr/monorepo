@@ -43,6 +43,10 @@
   "peerDependencies": {
     "react": "^16.4.2"
   },
+  "dependencies": {
+    "@tripeverywheree/commonutils": "^0.0.2",
+    "@tripeverywheree/uikit": "^0.0.2"
+  },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
       "prettier --single-quote --write",

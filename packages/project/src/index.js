@@ -3,10 +3,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import logo from './logo.svg';
 import registerServiceWorker from './registerServiceWorker';
 
-import UiKit from '@tripeverywheree/uikit/lib';
 import Core from '@project/core';
 
-ReactDOM.render(<Core.App />, document.getElementById('root'));
+const { App, Configuration } = Core;
+
+Configuration.apply({
+  uiConfiguration: {
+    logo: logo
+  }
+});
+
+ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();

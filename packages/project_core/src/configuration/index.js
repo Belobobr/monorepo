@@ -2,16 +2,29 @@
 
 //TODO move index to general dependency
 
-type Configuration =  {
-
+type UiConfiguration = {
+  logo: ?string
 }
 
-let configuration = {};
+type Configuration =  {
+  uiConfiguration: UiConfiguration
+}
 
-function configure(configuration: Configuration) {
+let configuration = {
+  uiConfiguration: {
+    logo: null
+  }
+};
+
+function apply(configuration: Configuration) {
   this.configuration = configuration;
 }
 
+function getCurrent(): Configuration {
+  return this.configuration
+}
+
 export default {
-  configure
+  apply,
+  getCurrent
 }

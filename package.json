@@ -17,6 +17,7 @@
     "build_storybook": "lerna run build --scope=storybook",
     "build_project": "lerna run build --scope=project",
     "watch_uikit": "lerna run watch --scope=@tripeverywheree/uikit",
+    "watch_core": "lerna run watch --scope=@project/core",
     "precommit": "lerna run --concurrency 1 --stream precommit",
     "flow": "flow"
   }
