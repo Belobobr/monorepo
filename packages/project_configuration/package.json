@@ -1,5 +1,5 @@
 {
-  "name": "@project/core",
+  "name": "@project/configuration",
   "version": "0.0.0",
   "description": "",
   "main": "lib/index.js",
@@ -11,7 +11,7 @@
     "watch_compiled": "webpack-cli --watch --config-name=development",
     "watch_flow": "npm-watch build_flow",
     "postinstall": "npm run build",
-    "precommitb@": "lint-staged",
+    "precommit": "lint-staged",
     "prepack": "npm run build && npm run build_flow",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -39,14 +39,6 @@
     "webpack": "^4.17.2",
     "webpack-cli": "^3.1.0",
     "npm-watch": "^0.4.0"
-  },
-  "peerDependencies": {
-    "react": "^16.4.2"
-  },
-  "dependencies": {
-    "@tripeverywheree/commonutils": "^0.0.2",
-    "@tripeverywheree/uikit": "^0.0.2",
-    "@project/configuration": "^0.0.0"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [

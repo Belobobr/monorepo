@@ -1,14 +1,6 @@
 // @flow
 
-//TODO move index to general dependency
-
-type UiConfiguration = {
-  logo: ?string
-}
-
-type Configuration =  {
-  uiConfiguration: UiConfiguration
-}
+import type { Configuration} from '@project/configuration';
 
 let configuration = {
   uiConfiguration: {

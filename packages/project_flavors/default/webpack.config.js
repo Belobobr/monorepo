@@ -10,7 +10,7 @@ const production = {
     output: {
         path: path.resolve(__dirname, 'lib'),
         filename: '[name].js',
-        library: '@project/core',
+        library: '@project/configuration',
         libraryTarget: 'umd'
     },
     module: {
