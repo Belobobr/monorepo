@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 
-type AvatarProps = {|
+export type AvatarProps = {|
   title: string,
   something?: boolean
 |};

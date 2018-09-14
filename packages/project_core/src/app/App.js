@@ -1,27 +1,45 @@
 // @flow
 
-import React, { Component } from 'react';
+import * as React from 'react';
 import UiKit from '@tripeverywheree/uikit';
-import Configuration from './../configuration';
+import Configurator from './../configuration';
+import type { Configuration } from "@project/configuration";
+import type { ButtonProps } from "../../../uikit/lib";
 
+//first approach - ui components can't be overriden
 const {Button, Avatar} = UiKit;
 
 type AppProps = {
 
 }
 
-class App extends Component<AppProps> {
+class App extends React.Component<AppProps> {
+
+  configuration: Configuration;
+  ButtonFromConfiguration: React.ComponentType<ButtonProps>;
+
+  constructor(props: AppProps) {
+    super(props);
+    //second approach - ui components configured with flavors (configuration for customer), but i can't resolve it statically
+    this.configuration = Configurator.getCurrent();
+    this.ButtonFromConfiguration = this.configuration.uiConfiguration.buttonComponent;
+  }
+
+
   render() {
+    const {configuration, ButtonFromConfiguration} = this;
+
     return (
       <div className="App">
         <header className="App-header">
-          <img src={Configuration.getCurrent().uiConfiguration.logo} className="App-logo" alt="logo" />
+          <img src={this.configuration.uiConfiguration.logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <Button title="some title"/>
+        <ButtonFromConfiguration title="some title"/>
       </div>
     );
   }

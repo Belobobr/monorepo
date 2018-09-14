@@ -10,6 +10,8 @@ import Core from '@project/core';
 
 const { App, Configuration } = Core;
 
+//TODO can i somehow resolve configuration statically after import from separate package?
+
 Configuration.apply(DefaultFlavor.configuration);
 
 ReactDOM.render(<App />, document.getElementById('root'));

@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 
-type ButtonProps = {|
+export type ButtonProps = {|
   title: string,
   something?: boolean
 |};
