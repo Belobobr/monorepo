@@ -3,6 +3,7 @@
 import React from 'react';
 import type { Configuration } from '@project/configuration';
 import type { ButtonProps } from '@tripeverywheree/uikit';
+import logo from './logo.svg';
 
 //TODO write task for copy resources
 // import logo from './logo.svg';
@@ -15,7 +16,7 @@ class Button extends React.Component<ButtonProps> {
 
 let configuration: Configuration = {
   uiConfiguration: {
-    logo: null,
+    logo: logo,
     buttonComponent: Button
   },
   apiConfiguration: {

@@ -1,7 +1,7 @@
 // @flow
 
 //TODO rename to Configurator
-import type { Configuration} from '@project/configuration';
+import type { Configuration } from '@project/configuration';
 
 let configuration = {
   uiConfiguration: {

@@ -10,7 +10,9 @@ import Core from '@project/core';
 
 const { App, Configuration } = Core;
 
-//TODO can i somehow resolve configuration statically after import from separate package?
+//TODO can i somehow resolve configuration statically after import from separate package? Can i resolve it with perDependecy it core?
+//dependency will be set depended on flavor. For example we have two package.json one - template and we can generate template with
+//perDependency on particular flavor
 
 Configuration.apply(DefaultFlavor.configuration);
 
