@@ -1,7 +1,7 @@
 // @flow
 
 import App from './app/App';
-import Configuration from './configuration';
+import Configuration from './configurator';
 
 export default {
   App,

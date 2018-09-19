@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import UiKit from '@tripeverywheree/uikit';
-import Configurator from './../configuration';
+import Configurator from '../configurator';
 import type { Configuration } from "@project/configuration";
 import type { ButtonProps } from "../../../uikit/lib";
 
@@ -22,7 +22,7 @@ class App extends React.Component<AppProps> {
     super(props);
     //second approach - ui components configured with flavors (configuration for customer), but i can't resolve it statically
     this.configuration = Configurator.getCurrent();
-    this.ButtonFromConfiguration = this.configuration.uiConfiguration.buttonComponent;
+    this.ButtonFromConfiguration = this.configuration.ui.buttonComponent;
   }
 
 
@@ -32,7 +32,7 @@ class App extends React.Component<AppProps> {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={this.configuration.uiConfiguration.logo} className="App-logo" alt="logo" />
+          <img src={this.configuration.ui.images.logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">

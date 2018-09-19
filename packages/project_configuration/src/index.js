@@ -3,8 +3,12 @@ import * as React from 'react';
 
 import type { ButtonProps, AvatarProps } from '@tripeverywheree/uikit';
 
+export type Images = {
+  logo: ?string
+};
+
 export type UiConfiguration = {
-  logo: ?string,
+  images: ?Images,
   buttonComponent: React.ComponentType<ButtonProps>
 };
 
@@ -15,6 +19,6 @@ export type ApiConfiguration = {
 };
 
 export type Configuration = {
-  uiConfiguration: UiConfiguration,
-  apiConfiguration: ApiConfiguration
+  ui: UiConfiguration,
+  api: ApiConfiguration
 };
