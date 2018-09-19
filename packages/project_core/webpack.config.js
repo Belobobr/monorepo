@@ -37,12 +37,8 @@ const production = {
         ]
     },
     externals: {
-        react: {
-            commonjs: 'react',
-            commonjs2: 'react',
-            amd: 'react',
-            root: 'react'
-        }
+        'react': 'react',
+        'react-bootstrap': 'react-bootstrap'
     },
     devtool: "source-map",
 }

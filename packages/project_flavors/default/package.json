@@ -18,8 +18,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "watch": {
-    "build_flow": "src/*.js",
-    "build_resources": "src/resources/*"
+    "build_flow": "src/*.js"
   },
   "files": [
     "lib"

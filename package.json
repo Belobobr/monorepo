@@ -17,11 +17,12 @@
     "build_uikit": "lerna run build --scope=@tripeverywheree/uikit",
     "build_storybook": "lerna run build --scope=storybook",
     "build_project": "lerna run build --scope=project",
+    "watch_project_less": "lerna run watch --scope=project",
     "watch_uikit": "lerna run watch --scope=@tripeverywheree/uikit",
     "watch_core": "lerna run watch --scope=@project/core",
     "watch_configuration": "lerna run watch --scope=@project/configuration",
     "watch_default_flavor": "lerna run watch --scope=@project/default_flavor",
-    "watch": "npm-run-all --parallel watch_uikit watch_core watch_configuration watch_default_flavor",
+    "watch": "npm-run-all --parallel watch_uikit watch_core watch_configuration watch_default_flavor watch_project_less",
     "precommit": "lerna run --concurrency 1 --stream precommit",
     "flow": "flow"
   }

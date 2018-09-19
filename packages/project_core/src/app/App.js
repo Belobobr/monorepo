@@ -5,9 +5,10 @@ import UiKit from '@tripeverywheree/uikit';
 import Configurator from '../configurator';
 import type { Configuration } from "@project/configuration";
 import type { ButtonProps } from "../../../uikit/lib";
+import { Navbar, Jumbotron, Button } from 'react-bootstrap';
 
 //first approach - ui components can't be overriden
-const {Button, Avatar} = UiKit;
+const { Avatar } = UiKit;
 
 type AppProps = {
 
@@ -38,7 +39,7 @@ class App extends React.Component<AppProps> {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <Button title="some title"/>
+        <Button bsStyle="primary">Primary</Button>
         <ButtonFromConfiguration title="some title"/>
       </div>
     );

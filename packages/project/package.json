@@ -3,24 +3,35 @@
   "version": "0.0.3",
   "private": true,
   "dependencies": {
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-scripts": "1.1.5",
+    "@project/configuration": "^0.0.0",
     "@project/core": "^0.0.0",
-    "@project/default_flavor": "^0.0.0"
+    "@project/default_flavor": "^0.0.0",
+    "bootstrap": "3",
+    "react": "^16.4.2",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.5"
   },
   "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "less-plugin-autoprefix": "^2.0.0",
+    "less-plugin-clean-css": "^1.5.1",
     "lint-staged": "^7.2.2",
     "prettier": "^1.14.2"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm run compile_less && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "precommit": "lint-staged",
     "build_flavor": "",
-    "configure_flavor": ""
+    "configure_flavor": "",
+    "compile_less": "grunt compile-less",
+    "watch_less": "grunt watch",
+    "watch": "npm run watch_less"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
